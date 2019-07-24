@@ -5,6 +5,8 @@ import AppBar from "@material-ui/core/AppBar";
 import Toolbar from '@material-ui/core/Toolbar';
 import Grid from '@material-ui/core/Grid';
 
+import TodoList from './TodoList.js'
+
 function TodoApp(){
     const initialTodos = [
         { id: 1, task: "Clean Fishtank", completed:false },
@@ -13,7 +15,7 @@ function TodoApp(){
     ];
 
     const [todos, setTodos] = useState(initialTodos);
-    
+
     return (
         <Paper style={{
             padding:0,
@@ -30,7 +32,7 @@ function TodoApp(){
                 </Toolbar>
 
             </AppBar>
-
+            <TodoList todos={todos} />
         </Paper>
     )
 }
