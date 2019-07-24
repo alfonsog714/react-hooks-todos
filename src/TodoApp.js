@@ -6,6 +6,7 @@ import Toolbar from '@material-ui/core/Toolbar';
 import Grid from '@material-ui/core/Grid';
 
 import TodoList from './TodoList.js'
+import TodoForm from './TodoForm.js';
 
 function TodoApp(){
     const initialTodos = [
@@ -32,6 +33,7 @@ function TodoApp(){
                 </Toolbar>
 
             </AppBar>
+            <TodoForm /> 
             <TodoList todos={todos} />
         </Paper>
     )
