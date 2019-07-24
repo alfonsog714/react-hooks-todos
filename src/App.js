@@ -1,10 +1,8 @@
-import React from 'react';
-import TodoApp from './TodoApp.js'
+import React from "react";
+import TodoApp from "./TodoApp.js";
 
 function App() {
-  return (
-    <TodoApp />
-  );
+  return <TodoApp />;
 }
 
 export default App;
